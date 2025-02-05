@@ -63,7 +63,7 @@ install_official_packages() {
         chromium
         tmux
         rust
-        neovim-git
+        neovim
         tree-sitter
         mutt
         git
@@ -75,6 +75,7 @@ install_official_packages() {
         fzf
         wget
         alacritty
+    	zsh
     )
     echo "==> Installing official packages: ${packages[*]}"
     sudo pacman -S --needed --noconfirm "${packages[@]}"
